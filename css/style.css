@@ -1,0 +1,41 @@
+.done {
+    opacity: .5;
+    text-decoration: line-through;
+}
+
+.task,
+i {
+    cursor: pointer;
+}
+
+.task:hover {
+    opacity: .8;
+    animation: trnalate 0.3s ease-in-out forwards;
+    -webkit-animation: trnalate 0.3s ease-in-out forwards;
+}
+
+@keyframes trnalate {
+    0% {
+        transform: translateX(0px);
+        -webkit-transform: translateX(0px);
+        -moz-transform: translateX(0px);
+        -ms-transform: translateX(0px);
+        -o-transform: translateX(0px);
+    }
+    100% {
+        transform: translateX(10px);
+        -webkit-transform: translateX(10px);
+        -moz-transform: translateX(10px);
+        -ms-transform: translateX(10px);
+        -o-transform: translateX(10px);
+    }
+}
+
+.time {
+    font-size: .7rem;
+    color: darkgrey;
+}
+
+input:required {
+    border: 1px solid red;
+}
